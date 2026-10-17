@@ -145,3 +145,13 @@ def test_resolve_without_an_answer():
     assert sug.resolve("MONDO:0011382") is None and "did not answer" in sug.last_error
     sug = Suggester(FakeOls({"/terms": {"_embedded": {"terms": []}}}), name="ols")
     assert sug.resolve("MONDO:9999999") is None and sug.last_error is None
+
+
+def test_an_opposite_term_from_ols_is_not_a_match():
+    """OLS may offer hypotensive disorder, whose synonym is "hypotension", for "Hypertension"."""
+    answer = {"response": {"numFound": 1, "start": 0, "docs": [
+        {"iri": "http://purl.obolibrary.org/obo/MONDO_0005468", "obo_id": "MONDO:0005468",
+         "short_form": "MONDO_0005468", "label": "hypotensive disorder",
+         "synonym": ["hypotension", "hypotension (disease)"], "ontology_name": "mondo", "type": "class"}]}}
+    found = FakeOls({"/search": answer}).search("Hypertension", limit=5)
+    assert [c.id for c in found] == ["MONDO:0005468"] and found[0].score < 50

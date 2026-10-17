@@ -1,7 +1,7 @@
 format-version: 1.2
 data-version: releases/2026-10-06
 ontology: mondo
-remark: Eight terms of Mondo for mondonorm's tests, NOT the ontology. Their ids,
+remark: Thirteen terms of Mondo for mondonorm's tests, NOT the ontology. Their ids,
 remark: names, definitions and synonyms are copied unchanged from the Mondo release
 remark: of 2026-10-06 (https://mondo.monarchinitiative.org, licence CC BY 4.0);
 remark: other lines are left out, and terms they refer to are not included.
@@ -125,3 +125,83 @@ synonym: "sickle cell disease" EXACT [DOID:0081445, NCIT:C34383, OMIM:603903]
 synonym: "sickle-cell/Hb-C disease without crisis" EXACT [DOID:10923, ICD9CM:282.63]
 synonym: "sickling disorder due to Haemoglobin S" EXACT OMO:0003005 []
 synonym: "sickling disorder due to Hemoglobin S" EXACT [NCIT:C34383]
+
+[Term]
+id: MONDO:0005044
+name: hypertensive disorder
+def: "Persistently high systemic arterial blood pressure. Based on multiple readings (blood pressure determination), hypertension is currently defined as when systolic pressure is consistently greater than 140 mm Hg or when diastolic pressure is consistently 90 mm Hg or more." [MESH:D006973]
+synonym: "blood pressure, high" EXACT []
+synonym: "blood pressure, increased" EXACT []
+synonym: "high blood pressure" EXACT [NCIT:C3117]
+synonym: "HTN" BROAD ABBREVIATION []
+synonym: "hypertensive disease" EXACT [MTH:NOCODE]
+synonym: "increased blood pressure" EXACT []
+synonym: "pressure, high blood" EXACT []
+synonym: "vascular hypertensive disorder" EXACT [DOID:10763, NCIT:C3117]
+is_a: MONDO:0000473 {source="DOID:10763"} ! arterial disorder
+
+[Term]
+id: MONDO:0005468
+name: hypotensive disorder
+def: "Blood pressure that is abnormally low." [NCIT:P378]
+synonym: "hypotension" EXACT [ICD10CM:I95, icd11.foundation:1663360295, MONDO:ambiguous]
+synonym: "hypotension (disease)" EXACT [https://github.com/monarch-initiative/mondo/issues/1030]
+is_a: MONDO:0000473 {source="https://github.com/monarch-initiative/mondo/issues/1030"} ! arterial disorder
+
+[Term]
+id: MONDO:0001134
+name: essential hypertension
+def: "Hypertension that presents without an identifiable cause." [NCIT:P378]
+synonym: "idiopathic hypertension" EXACT [DOID:10825, icd11.foundation:761947693, Wikipedia:Essential_hypertension]
+synonym: "primary hypertension" EXACT [DOID:10825, icd11.foundation:761947693, Wikipedia:Essential_hypertension]
+is_a: MONDO:0005044 {source="DOID:10825", source="EFO:1002032", source="MESH:C562386"} ! hypertensive disorder
+
+[Term]
+id: MONDO:0005147
+name: type 1 diabetes mellitus
+def: "A chronic condition characterized by minimal or absent production of insulin by the pancreas." [NCIT:C2986]
+synonym: "diabetes mellitis type 1" EXACT []
+synonym: "diabetes mellitis type I" EXACT []
+synonym: "IDDM" EXACT DEPRECATED [DOID:9744, NCIT:C2986, OMIM:222100]
+synonym: "immune mediated diabetes" EXACT [NCIT:C2986]
+synonym: "insulin dependent diabetes" EXACT DEPRECATED [NCIT:C2986]
+synonym: "juvenile diabetes" EXACT DEPRECATED [NCIT:C2986]
+synonym: "T1D" EXACT ABBREVIATION [https://orcid.org/0000-0002-4071-8397, OMIM:222100]
+synonym: "T1DM" EXACT ABBREVIATION [https://orcid.org/0000-0002-4071-8397]
+synonym: "type 1 diabetes" EXACT [icd11.foundation:1651053999, NCIT:C2986]
+synonym: "type I diabetes" EXACT [NCIT:C2986]
+synonym: "type I diabetes mellitus" EXACT [DOID:9744, NCIT:C2986]
+is_a: MONDO:0000569 {source="DOID:9744"} ! autoimmune disorder of endocrine system
+is_a: MONDO:0000588 ! autoimmune disorder of gastrointestinal tract
+is_a: MONDO:0005015 {source="DOID:9744", source="EFO:0001359", source="MESH:D003922", source="NCIT:C2986", source="icd11.foundation:1651053999"} ! diabetes mellitus
+
+[Term]
+id: MONDO:0005148
+name: type 2 diabetes mellitus
+def: "A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity." [NCIT:P378]
+synonym: "adult onset diabetes" EXACT DEPRECATED [icd11.foundation:119724091, NCIT:C26747]
+synonym: "adult-onset diabetes" EXACT DEPRECATED [NCIT:C26747]
+synonym: "diabetes mellitis type 2" EXACT []
+synonym: "diabetes mellitis type II" EXACT []
+synonym: "diabetes mellitus, noninsulin-dependent" EXACT [OMIM:125853]
+synonym: "diabetes mellitus, noninsulin-dependent, 2" NARROW []
+synonym: "diabetes mellitus, noninsulin-dependent, association with" EXACT []
+synonym: "diabetes mellitus, noninsulin-dependent, late onset" EXACT []
+synonym: "diabetes mellitus, type 2" EXACT [OMIM:125853]
+synonym: "diabetes mellitus, type II" EXACT []
+synonym: "diabetes, type 2" EXACT [NCIT:C26747]
+synonym: "insulin resistance, severe, digenic" EXACT []
+synonym: "NIDDM" EXACT DEPRECATED [DOID:9352, NCIT:C26747, OMIM:125853]
+synonym: "non-insulin dependent diabetes" EXACT DEPRECATED [NCIT:C26747]
+synonym: "non-insulin dependent diabetes mellitus" EXACT DEPRECATED [icd11.foundation:119724091, NCIT:C26747]
+synonym: "noninsulin dependent diabetes" EXACT DEPRECATED [icd11.foundation:119724091, NCIT:C26747]
+synonym: "noninsulin-dependent diabetes mellitus" EXACT [OMIM:125853]
+synonym: "T2D" EXACT ABBREVIATION [https://orcid.org/0000-0002-4071-8397, OMIM:125853]
+synonym: "T2DM" EXACT ABBREVIATION [https://orcid.org/0000-0002-4071-8397]
+synonym: "T2DM - type 2 diabetes mellitus" EXACT [NCIT:C26747]
+synonym: "type 2 diabetes" EXACT [DOID:9352, icd11.foundation:119724091, NCIT:C26747]
+synonym: "type 2 diabetes mellitus" EXACT [DOID:9352, ICD10CM:E11, ICD10WHO:E11, icd11.foundation:119724091, NCIT:C26747, OMIM:125853]
+synonym: "type 2 diabetes mellitus non-insulin dependent" EXACT [NCIT:C26747]
+synonym: "type II diabetes" EXACT [icd11.foundation:119724091, NCIT:C26747]
+synonym: "type II diabetes mellitus" EXACT [DOID:9352, icd11.foundation:119724091, NCIT:C26747]
+is_a: MONDO:0005015 {source="DOID:9352", source="EFO:0001360", source="MESH:D003924", source="NCIT:C26747", source="icd11.foundation:119724091"} ! diabetes mellitus
