@@ -1,0 +1,207 @@
+format-version: 1.2
+data-version: releases/2026-10-06
+ontology: mondo
+remark: Thirteen terms of Mondo for mondonorm's tests, NOT the ontology. Their ids,
+remark: names, definitions and synonyms are copied unchanged from the Mondo release
+remark: of 2026-10-06 (https://mondo.monarchinitiative.org, licence CC BY 4.0);
+remark: other lines are left out, and terms they refer to are not included.
+
+[Term]
+id: MONDO:0007254
+name: breast cancer
+def: "A primary or metastatic malignant neoplasm involving the breast. The vast majority of cases are carcinomas arising from the breast parenchyma or the nipple. Malignant breast neoplasms occur more frequently in females than in males." [NCIT:C9335]
+synonym: "breast cancer" EXACT [DOID:1612, icd11.foundation:1047754165, MONDO:patterns/location]
+synonym: "breast tumor" BROAD []
+synonym: "breast tumour" BROAD OMO:0003005 []
+synonym: "cancer of breast" EXACT [icd11.foundation:1047754165, MONDO:patterns/cancer]
+synonym: "malignant breast neoplasm" EXACT [MONDO:patterns/cancer, NCIT:C9335]
+synonym: "malignant breast tumor" EXACT [NCIT:C9335]
+synonym: "malignant breast tumour" EXACT OMO:0003005 []
+synonym: "malignant neoplasm of breast" EXACT [DOID:1612, ICD10CM:C50, MONDO:patterns/cancer, NCIT:C9335]
+synonym: "malignant neoplasm of the breast" EXACT [NCIT:C9335]
+synonym: "malignant tumor of breast" EXACT [NCIT:C9335]
+synonym: "malignant tumor of the breast" EXACT [DOID:1612, NCIT:C9335]
+synonym: "malignant tumour of breast" EXACT OMO:0003005 [icd11.foundation:1047754165]
+synonym: "malignant tumour of the breast" EXACT OMO:0003005 []
+synonym: "mammary tumor" BROAD []
+synonym: "mammary tumour" BROAD OMO:0003005 []
+synonym: "primary breast cancer" NARROW []
+
+[Term]
+id: MONDO:0008170
+name: ovarian cancer
+def: "A primary or metastatic malignant neoplasm involving the ovary. Most primary malignant ovarian neoplasms are either carcinomas (serous, mucinous, or endometrioid adenocarcinomas) or malignant germ cell tumors. Metastatic malignant neoplasms to the ovary include carcinomas, lymphomas, and melanomas." [NCIT:C7431]
+synonym: "cancer of ovary" EXACT [icd11.foundation:685124533, MONDO:patterns/cancer, NCIT:C7431]
+synonym: "cancer of the ovary" EXACT [NCIT:C7431]
+synonym: "malignant neoplasm of ovary" EXACT [ICD10CM:C56, MONDO:patterns/cancer, NCIT:C7431]
+synonym: "malignant neoplasm of the ovary" EXACT [NCIT:C7431]
+synonym: "malignant ovarian neoplasm" EXACT [NCIT:C7431]
+synonym: "malignant ovarian tumor" EXACT [DOID:2394, NCIT:C7431]
+synonym: "malignant ovarian tumour" EXACT OMO:0003005 []
+synonym: "malignant ovary neoplasm" EXACT [MONDO:patterns/cancer]
+synonym: "malignant tumor of ovary" EXACT [NCIT:C7431]
+synonym: "malignant tumor of the ovary" EXACT [NCIT:C7431]
+synonym: "malignant tumour of ovary" EXACT OMO:0003005 [DOID:2394, icd11.foundation:685124533]
+synonym: "malignant tumour of the ovary" EXACT OMO:0003005 []
+synonym: "ovarian cancer" EXACT [DOID:2394, icd11.foundation:685124533, NCIT:C7431, OMIM:167000]
+synonym: "ovarian cancer, somatic" EXACT []
+synonym: "ovarian malignant tumor" EXACT []
+synonym: "ovarian malignant tumour" EXACT OMO:0003005 []
+synonym: "ovarian neoplasm" BROAD [MTH:NOCODE]
+synonym: "ovary cancer" EXACT [icd11.foundation:685124533, MONDO:patterns/location]
+synonym: "ovary neoplasm" BROAD []
+synonym: "tumor of the ovary" BROAD []
+synonym: "tumour of the ovary" BROAD OMO:0003005 []
+
+[Term]
+id: MONDO:0003582
+name: hereditary breast ovarian cancer syndrome
+def: "An autosomal dominant inherited syndrome caused by mutations in the BRCA1 or BRCA2 genes. Patients are at high risk of developing breast cancer, particularly before the age of fifty, high risk of developing a second primary breast cancer, and high risk of developing both breast and ovarian cancer." [NCIT:C8493]
+synonym: "BRCA1- and BRCA2-associated hereditary breast and ovarian cancer (HBOC)" EXACT []
+synonym: "familial breast and ovarian cancer syndrome" EXACT [NCIT:C8493]
+synonym: "familial breast/ovarian cancer (BRCA1, BRCA2)" EXACT [NCIT:C8493]
+synonym: "HBOC syndrome" RELATED [MESH:D061325]
+synonym: "HBOC syndromes" RELATED [MESH:D061325]
+synonym: "hereditary breast and ovarian cancer" EXACT [DOID:5683, NCIT:C8493]
+synonym: "Hereditary Breast and Ovarian Cancer Syndrome" EXACT [DOID:5683, icd11.foundation:1258896144, NCIT:C8493, NORD:1936] {OMO:0002001="https://w3id.org/information-resource-registry/nord"}
+synonym: "hereditary breast and ovarian cancer syndrome" EXACT [DOID:5683, icd11.foundation:1258896144, MONDO:0015442, NCIT:C8493]
+synonym: "hereditary breast ovarian cancer syndrome" EXACT [DOID:5683] {OMO:0002001="https://w3id.org/information-resource-registry/clingen"}
+synonym: "hereditary breast/ovarian cancer (BRCA1, BRCA2)" EXACT [NCIT:C8493]
+synonym: "syndrome, HBOC" RELATED [MESH:D061325]
+synonym: "syndromes, HBOC" RELATED [MESH:D061325]
+
+[Term]
+id: MONDO:0007739
+name: Huntington disease
+def: "Huntington disease (HD) is a rare neurodegenerative disorder of the central nervous system characterized by unwanted choreatic movements, behavioral and psychiatric disturbances and dementia." [Orphanet:399]
+synonym: "HD" EXACT ABBREVIATION [DOID:12858, NCIT:C82342, OMIM:143100]
+synonym: "Huntington chorea" EXACT [icd11.foundation:2132180242, OMIM:143100, Orphanet:399]
+synonym: "Huntington disease" EXACT [DOID:12858, ICD10WHO:G10, icd11.foundation:2132180242, NCIT:C82342, OMIM:143100, Orphanet:399]
+synonym: "Huntington's chorea" EXACT [DOID:12858, ICD10CM:G10, ICD9CM:333.4, NCIT:C82342]
+synonym: "Huntington's Disease" EXACT [DOID:12858, ICD10CM:G10, NCIT:C82342, NORD:1256] {OMO:0002001="https://w3id.org/information-resource-registry/nord"}
+synonym: "Huntington's disease" EXACT [doi:10.1093/jama/9780195176339.003.0016, DOID:12858, ICD10CM:G10, NCIT:C82342]
+
+[Term]
+id: MONDO:0010679
+name: Duchenne muscular dystrophy
+def: "Duchenne muscular dystrophy (DMD) is a neuromuscular disease characterized by rapidly progressive muscle weakness and wasting due to degeneration of skeletal, smooth and cardiac muscle." [Orphanet:98896]
+synonym: "DMD" EXACT ABBREVIATION [OMIM:310200, Orphanet:98896]
+synonym: "Duchenne muscular dystrophy" EXACT [DOID:11723, icd11.foundation:1479561744, NCIT:C75482, OMIM:310200, Orphanet:98896] {OMO:0002001="https://w3id.org/information-resource-registry/clingen"}
+synonym: "Duchenne muscular dystrophy, X-linked recessive" EXACT []
+synonym: "muscular dystrophy, Duchenne type" RELATED []
+synonym: "severe dystrophinopathy, Duchenne type" EXACT [Orphanet:98896]
+
+[Term]
+id: MONDO:0010311
+name: Becker muscular dystrophy
+def: "Becker muscular dystrophy (BMD) is a neuromuscular disease characterized by progressive muscle wasting and weakness due to degeneration of skeletal, smooth and cardiac muscle." [Orphanet:98895]
+synonym: "Becker dystrophinopathy" EXACT [Orphanet:98895]
+synonym: "Becker muscular dystrophy" EXACT [DOID:9883, icd11.foundation:690532643, OMIM:300376, Orphanet:98895]
+synonym: "Becker muscular dystrophy, X-linked recessive" EXACT []
+synonym: "Becker's muscular dystrophy" RELATED [GARD:0005900]
+synonym: "BMD" EXACT ABBREVIATION [OMIM:300376, Orphanet:98895]
+synonym: "muscular dystrophy pseudohypertrophic progressive, Becker type" RELATED [GARD:0005900]
+synonym: "muscular dystrophy, Becker type" RELATED [GARD:0005900]
+
+[Term]
+id: MONDO:0020121
+name: muscular dystrophy
+def: "Muscular dystrophy (MD) refers to a group of more than 30 genetic diseases characterized by progressive weakness and degeneration of the skeletal muscles that control movement. Some forms of MD are seen in newborns, infants or children, while others have late-onset and may not appear until middle age or later. The disorders differ in terms of the distribution and extent of muscle weakness (some forms of MD also affect cardiac muscle), age of onset, rate of progression, and pattern of inheritance. The prognosis for people with MD varies according to the type and progression of the disorder. There is no specific treatment to stop or reverse any form of MD. Treatment is supportive and may include physical therapy, respiratory therapy, speech therapy, orthopedic appliances used for support, corrective orthopedic surgery, and medicationsincluding corticosteroids, anticonvulsants (seizure medications), immunosuppressants, and antibiotics. Some individuals may need assisted ventilation to treat respiratory muscle weaknessor a pacemaker for cardiac (heart)abnormalities." [https://rarediseases.info.nih.gov/diseases/7922/muscular-dystrophy]
+
+[Term]
+id: MONDO:0011382
+name: sickle cell disease
+def: "Sickle cell anemias are chronic hemolytic diseases that may induce three types of acute accidents: severe anemia, severe bacterial infections, and ischemic vasoocclusive accidents (VOA) caused by sickle-shaped red blood cells obstructing small blood vessels and capillaries. Many diverse complications can occur." [Orphanet:232]
+synonym: "Haemoglobin S disease" RELATED OMO:0003005 []
+synonym: "Haemoglobin S disease without crisis" EXACT OMO:0003005 []
+synonym: "Hb-S/Hb-C disease" EXACT [DOID:10923, ICD10CM:D57.2]
+synonym: "HbS disease" RELATED [GARD:0008614]
+synonym: "Hemoglobin S disease" RELATED [GARD:0008614]
+synonym: "HPA 1 recognition polymorphism, beta-globin-related" RELATED []
+synonym: "HPA1" RELATED ABBREVIATION []
+synonym: "sickle cell anemia" EXACT [DOID:10923, NCIT:C34383, OMIM:603903, Orphanet:232]
+synonym: "Sickle Cell Disease" EXACT [DOID:0081445, NCIT:C34383, NORD:1714, OMIM:603903] {OMO:0002001="https://w3id.org/information-resource-registry/nord"}
+synonym: "sickle cell disease" EXACT [DOID:0081445, NCIT:C34383, OMIM:603903]
+synonym: "sickle-cell/Hb-C disease without crisis" EXACT [DOID:10923, ICD9CM:282.63]
+synonym: "sickling disorder due to Haemoglobin S" EXACT OMO:0003005 []
+synonym: "sickling disorder due to Hemoglobin S" EXACT [NCIT:C34383]
+
+[Term]
+id: MONDO:0005044
+name: hypertensive disorder
+def: "Persistently high systemic arterial blood pressure. Based on multiple readings (blood pressure determination), hypertension is currently defined as when systolic pressure is consistently greater than 140 mm Hg or when diastolic pressure is consistently 90 mm Hg or more." [MESH:D006973]
+synonym: "blood pressure, high" EXACT []
+synonym: "blood pressure, increased" EXACT []
+synonym: "high blood pressure" EXACT [NCIT:C3117]
+synonym: "HTN" BROAD ABBREVIATION []
+synonym: "hypertensive disease" EXACT [MTH:NOCODE]
+synonym: "increased blood pressure" EXACT []
+synonym: "pressure, high blood" EXACT []
+synonym: "vascular hypertensive disorder" EXACT [DOID:10763, NCIT:C3117]
+is_a: MONDO:0000473 {source="DOID:10763"} ! arterial disorder
+
+[Term]
+id: MONDO:0005468
+name: hypotensive disorder
+def: "Blood pressure that is abnormally low." [NCIT:P378]
+synonym: "hypotension" EXACT [ICD10CM:I95, icd11.foundation:1663360295, MONDO:ambiguous]
+synonym: "hypotension (disease)" EXACT [https://github.com/monarch-initiative/mondo/issues/1030]
+is_a: MONDO:0000473 {source="https://github.com/monarch-initiative/mondo/issues/1030"} ! arterial disorder
+
+[Term]
+id: MONDO:0001134
+name: essential hypertension
+def: "Hypertension that presents without an identifiable cause." [NCIT:P378]
+synonym: "idiopathic hypertension" EXACT [DOID:10825, icd11.foundation:761947693, Wikipedia:Essential_hypertension]
+synonym: "primary hypertension" EXACT [DOID:10825, icd11.foundation:761947693, Wikipedia:Essential_hypertension]
+is_a: MONDO:0005044 {source="DOID:10825", source="EFO:1002032", source="MESH:C562386"} ! hypertensive disorder
+
+[Term]
+id: MONDO:0005147
+name: type 1 diabetes mellitus
+def: "A chronic condition characterized by minimal or absent production of insulin by the pancreas." [NCIT:C2986]
+synonym: "diabetes mellitis type 1" EXACT []
+synonym: "diabetes mellitis type I" EXACT []
+synonym: "IDDM" EXACT DEPRECATED [DOID:9744, NCIT:C2986, OMIM:222100]
+synonym: "immune mediated diabetes" EXACT [NCIT:C2986]
+synonym: "insulin dependent diabetes" EXACT DEPRECATED [NCIT:C2986]
+synonym: "juvenile diabetes" EXACT DEPRECATED [NCIT:C2986]
+synonym: "T1D" EXACT ABBREVIATION [https://orcid.org/0000-0002-4071-8397, OMIM:222100]
+synonym: "T1DM" EXACT ABBREVIATION [https://orcid.org/0000-0002-4071-8397]
+synonym: "type 1 diabetes" EXACT [icd11.foundation:1651053999, NCIT:C2986]
+synonym: "type I diabetes" EXACT [NCIT:C2986]
+synonym: "type I diabetes mellitus" EXACT [DOID:9744, NCIT:C2986]
+is_a: MONDO:0000569 {source="DOID:9744"} ! autoimmune disorder of endocrine system
+is_a: MONDO:0000588 ! autoimmune disorder of gastrointestinal tract
+is_a: MONDO:0005015 {source="DOID:9744", source="EFO:0001359", source="MESH:D003922", source="NCIT:C2986", source="icd11.foundation:1651053999"} ! diabetes mellitus
+
+[Term]
+id: MONDO:0005148
+name: type 2 diabetes mellitus
+def: "A type of diabetes mellitus that is characterized by insulin resistance or desensitization and increased blood glucose levels. This is a chronic disease that can develop gradually over the life of a patient and can be linked to both environmental factors and heredity." [NCIT:P378]
+synonym: "adult onset diabetes" EXACT DEPRECATED [icd11.foundation:119724091, NCIT:C26747]
+synonym: "adult-onset diabetes" EXACT DEPRECATED [NCIT:C26747]
+synonym: "diabetes mellitis type 2" EXACT []
+synonym: "diabetes mellitis type II" EXACT []
+synonym: "diabetes mellitus, noninsulin-dependent" EXACT [OMIM:125853]
+synonym: "diabetes mellitus, noninsulin-dependent, 2" NARROW []
+synonym: "diabetes mellitus, noninsulin-dependent, association with" EXACT []
+synonym: "diabetes mellitus, noninsulin-dependent, late onset" EXACT []
+synonym: "diabetes mellitus, type 2" EXACT [OMIM:125853]
+synonym: "diabetes mellitus, type II" EXACT []
+synonym: "diabetes, type 2" EXACT [NCIT:C26747]
+synonym: "insulin resistance, severe, digenic" EXACT []
+synonym: "NIDDM" EXACT DEPRECATED [DOID:9352, NCIT:C26747, OMIM:125853]
+synonym: "non-insulin dependent diabetes" EXACT DEPRECATED [NCIT:C26747]
+synonym: "non-insulin dependent diabetes mellitus" EXACT DEPRECATED [icd11.foundation:119724091, NCIT:C26747]
+synonym: "noninsulin dependent diabetes" EXACT DEPRECATED [icd11.foundation:119724091, NCIT:C26747]
+synonym: "noninsulin-dependent diabetes mellitus" EXACT [OMIM:125853]
+synonym: "T2D" EXACT ABBREVIATION [https://orcid.org/0000-0002-4071-8397, OMIM:125853]
+synonym: "T2DM" EXACT ABBREVIATION [https://orcid.org/0000-0002-4071-8397]
+synonym: "T2DM - type 2 diabetes mellitus" EXACT [NCIT:C26747]
+synonym: "type 2 diabetes" EXACT [DOID:9352, icd11.foundation:119724091, NCIT:C26747]
+synonym: "type 2 diabetes mellitus" EXACT [DOID:9352, ICD10CM:E11, ICD10WHO:E11, icd11.foundation:119724091, NCIT:C26747, OMIM:125853]
+synonym: "type 2 diabetes mellitus non-insulin dependent" EXACT [NCIT:C26747]
+synonym: "type II diabetes" EXACT [icd11.foundation:119724091, NCIT:C26747]
+synonym: "type II diabetes mellitus" EXACT [DOID:9352, icd11.foundation:119724091, NCIT:C26747]
+is_a: MONDO:0005015 {source="DOID:9352", source="EFO:0001360", source="MESH:D003924", source="NCIT:C26747", source="icd11.foundation:119724091"} ! diabetes mellitus
